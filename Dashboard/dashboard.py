@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-df = pd.read_csv("main_data.csv")
+df = pd.read_csv("https://github.com/fadhiljr7/DataScience-Quant-Trading-Analyts-BTC-ETH-XRP/blob/143d43f817c11f03dd69d4d559c9db33f4d178b4/Dashboard/main_data.csv")
 df["Date"] = pd.to_datetime(df["Date"])
 
 st.set_page_config(page_title="Quant Trading Analysis",
