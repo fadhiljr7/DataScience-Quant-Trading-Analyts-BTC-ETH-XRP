@@ -10,7 +10,7 @@ st.set_page_config(page_title="Quant Trading Analysis",
                    layout="wide")
 
 # ----- SIDEBAR -----
-st.sidebar.image("logo.png")
+st.sidebar.image("https://github.com/fadhiljr7/DataScience-Quant-Trading-Analyts-BTC-ETH-XRP/blob/3a563c4f4ede20aea5c9b409fe139a737cb8d702/Dashboard/Images/logo.png")
 
 st.sidebar.header("Filter:")
 
@@ -37,7 +37,7 @@ if cr_filter == 'BTC/USD':
     lowest_pr = main_df["BTC-LOW"].min()
     highest_pr = main_df["BTC-HIGH"].max()
     roi = ((highest_pr - lowest_pr) / lowest_pr) * 100
-    limage = "btc.png"
+    limage = "https://github.com/fadhiljr7/DataScience-Quant-Trading-Analyts-BTC-ETH-XRP/blob/3a563c4f4ede20aea5c9b409fe139a737cb8d702/Dashboard/Images/btc.png"
     fig = px.line(main_df, x='Date', y='BTC-CLOSE', title='Bitcoin(BTC) Price Over Time').update_layout(xaxis_title="Date", yaxis_title="BTC Price (USD)")
     fig2 = px.bar(main_df, x='Date', y=['BTC-HIGH', 'BTC-LOW', 'BTC-CLOSE'], title='Bitcoin (BTC) High, Low, and Close Prices Over Time').update_layout(xaxis_title="Date", yaxis_title="Price (USD)")
     fig3 = px.scatter(main_df, x='BTC-VOLUME', y='BTC-CLOSE', title='Relationship between Trading Volume and Price').update_layout(xaxis_title="BTC Trading Volume", yaxis_title="BTC Price (USD)")
@@ -46,7 +46,7 @@ elif cr_filter == 'ETH/USD':
     lowest_pr = main_df["ETH-LOW"].min()
     highest_pr = main_df["ETH-HIGH"].max()
     roi = ((highest_pr - lowest_pr) / lowest_pr) * 100
-    limage = "eth.png"
+    limage = "https://github.com/fadhiljr7/DataScience-Quant-Trading-Analyts-BTC-ETH-XRP/blob/3a563c4f4ede20aea5c9b409fe139a737cb8d702/Dashboard/Images/eth.png"
     fig = px.line(main_df, x='Date', y='ETH-CLOSE', title='Ethereum(ETH) Price Over Time').update_layout(xaxis_title="Date", yaxis_title="ETH Price (USD)")
     fig2 = px.bar(main_df, x='Date', y=['ETH-HIGH', 'ETH-LOW', 'ETH-CLOSE'], title='Ethereum (ETH) High, Low, and Close Prices Over Time').update_layout(xaxis_title="Date", yaxis_title="Price (USD)")
     fig3 = px.scatter(main_df, x='ETH-VOLUME', y='ETH-CLOSE', title='Relationship between Trading Volume and Price').update_layout(xaxis_title="ETH Trading Volume", yaxis_title="ETH Price (USD)")
@@ -55,7 +55,7 @@ elif cr_filter == 'XRP/USD':
     lowest_pr = main_df["XRP-LOW"].min()
     highest_pr = main_df["XRP-HIGH"].max()
     roi = ((highest_pr - lowest_pr) / lowest_pr) * 100
-    limage = "xrp.png"
+    limage = "https://github.com/fadhiljr7/DataScience-Quant-Trading-Analyts-BTC-ETH-XRP/blob/3a563c4f4ede20aea5c9b409fe139a737cb8d702/Dashboard/Images/xrp.png"
     fig = px.line(main_df, x='Date', y='XRP-CLOSE', title='Ripple(XRP) Price Over Time').update_layout(xaxis_title="Date", yaxis_title="XRP Price (USD)")
     fig2 = px.bar(main_df, x='Date', y=['XRP-HIGH', 'XRP-LOW', 'XRP-CLOSE'], title='Ripple (XRP) High, Low, and Close Prices Over Time').update_layout(xaxis_title="Date", yaxis_title="Price (USD)")
     fig3 = px.scatter(main_df, x='XRP-VOLUME', y='XRP-CLOSE', title='Relationship between Trading Volume and Price').update_layout(xaxis_title="XRP Trading Volume", yaxis_title="XRP Price (USD)")
