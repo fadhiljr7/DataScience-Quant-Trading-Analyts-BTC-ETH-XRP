@@ -18,6 +18,6 @@ streamlit run dashboard.py
 ## View Dashboard Directly
 On the data dashboard, you can directly observe the comparison of cryptocurrencies Bitcoin (BTC), Ethereum (ETH), and Ripple (XRP) starting from December 2017 to September 2023. It provides a summary of quant trading analysis for these three cryptocurrencies, along with four charts illustrating their price developments/growth. There is also a chart depicting the relationship between cryptocurrency prices and their trading volume, etc.
 
-Here's the link: [...](https://quantradinganalysis1.streamlit.app/)
+Here's the link: [streamlit.App](https://quantradinganalysis1.streamlit.app/)
 
 ![Screenshot 2023-10-10 132759](https://github.com/fadhiljr7/DataScience-Quant-Trading-Analyts-BTC-ETH-XRP/assets/48880516/d68b4bae-9d49-4960-b827-56f376f5c7b1)
