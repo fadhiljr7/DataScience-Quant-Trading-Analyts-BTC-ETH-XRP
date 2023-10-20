@@ -9,7 +9,7 @@ st.set_page_config(page_title="Quant Trading Analysis",
                    page_icon="bar_chart:",
                    layout="wide")
 
-# ----- SIDEBAR -----
+# ------ SIDEBAR -------
 st.sidebar.image("https://raw.githubusercontent.com/fadhiljr7/DataScience-Quant-Trading-Analyts-BTC-ETH-XRP/main/Dashboard/Images/logo.png")
 
 st.sidebar.header("Filter:")
